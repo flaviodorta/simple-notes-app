@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import { Container } from '../../UI/Container/Container';
 
 export const Navbar = () => {
   return (

@@ -1,16 +1,20 @@
 import React from 'react';
 import { Grid } from '../../UI/Grid/Grid';
 import { Note } from './Note/Note';
+import { WriteNote } from './WriteNote/WriteNote';
 
-export const Notes = () => {
+export const Notes = ({ notes, deleteNote, sendNote }) => {
   return (
     <Grid>
-      <Note />
-      <Note />
-      <Note />
-      <Note />
-      <Note />
-      <Note />
+      {notes.map((note) => (
+        <Note
+          key={note.id}
+          id={note.id}
+          text={note.text}
+          deleteNote={deleteNote}
+        />
+      ))}
+      <WriteNote sendNote={sendNote} />
     </Grid>
   );
 };
