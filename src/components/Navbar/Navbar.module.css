@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 1.2rem auto;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
