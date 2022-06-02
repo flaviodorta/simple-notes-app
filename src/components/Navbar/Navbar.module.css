@@ -5,6 +5,11 @@
   margin: 0 auto 1.2rem auto;
 }
 
-.logo {
+.logo-light {
   font-size: 2.4rem;
+}
+
+.logo-dark {
+  font-size: 2.4rem;
+  color: white;
 }

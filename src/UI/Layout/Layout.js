@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Layout.module.css';
+import { ThemeContext } from '../../context/ThemeProvider';
 
 export const Layout = ({ children }) => {
-  return <div className={styles.container}>{children}</div>;
+  const { darkMode } = useContext(ThemeContext);
+  return (
+    <div
+      className={
+        darkMode ? styles['container-dark'] : styles['container-light']
+      }
+    >
+      {children}
+    </div>
+  );
 };
