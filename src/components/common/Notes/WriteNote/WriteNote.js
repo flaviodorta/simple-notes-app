@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './WriteNote.module.css';
-import { useOnKeyPress } from '../../../hooks/useOnKeyPress';
+import { useOnKeyPress } from '../../../../hooks/useOnKeyPress';
 
 export const WriteNote = ({ sendNote }) => {
   const [text, setText] = useState('');
@@ -10,6 +10,7 @@ export const WriteNote = ({ sendNote }) => {
     setText('');
   };
   useOnKeyPress(send, 'Enter');
+
   return (
     <div className={styles.container}>
       <textarea

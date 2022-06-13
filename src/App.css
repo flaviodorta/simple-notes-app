@@ -9,8 +9,11 @@
   margin: 0;
   list-style-type: none;
 }
-
-body {
+.body-dark body {
+  font-family: 'Roboto', sans-serif;
+  background-color: grey;
+}
+.body-light body {
   font-family: 'Roboto', sans-serif;
 }
 

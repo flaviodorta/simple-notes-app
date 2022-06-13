@@ -1,15 +1,19 @@
 import React, { useContext } from 'react';
 import styles from './Navbar.module.css';
 import { ThemeButton } from '../ThemeButton/ThemeButton';
-import { ThemeContext } from '../../context/ThemeProvider';
+import { ThemeContext } from '../../../styles/theme/Theme';
 
 export const Navbar = () => {
-  const { darkMode } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={styles.container}>
       <div>
-        <h1 className={darkMode ? styles['logo-dark'] : styles['logo-light']}>
+        <h1
+          className={
+            theme === 'dark' ? styles['logo-dark'] : styles['logo-light']
+          }
+        >
           React Notes
         </h1>
       </div>

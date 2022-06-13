@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './Note.module.css';
 
 export const Note = ({ id, text, deleteNote }) => {
-  console.log(id);
-  console.log(typeof deleteNote);
   return (
     <div className={styles.container}>
       <p>{text}</p>
