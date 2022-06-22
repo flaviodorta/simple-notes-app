@@ -1,0 +1,30 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  font-size: inherit;
+  text-rendering: optimizeLegibility;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color: black;
+  font-family: $font-family;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
